@@ -1,10 +1,6 @@
 n1 = float(input("digite o prmeiro numero: "))
 n2 = float(input("digite o segundo numero: "))
-escolha = int(input("digite 1 para media, 2 pra diferença, 3 pra produto e 4 pra divisão: "))
-
-if n2 == 0 and escolha == 4:
-    print("erro")
-    exit()
+escolha = int(input("digite 1 para media, 2 pra diferença, 3 pra produto"))
 
 if escolha == 1:
     media = (n1 + n2) / 2

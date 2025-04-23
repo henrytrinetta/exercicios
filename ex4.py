@@ -1,7 +1,16 @@
-preco = int(input("digite o valor a sofrer desconto: "))
+anumero = int(input("Digite um numero: "))
+bnumero = int(input("Digite um numero: "))
+cnumero = int(input("Digite um numero: "))
 
-desconto = (preco * 10) / 100
+if anumero > bnumero and anumero > cnumero:
+    print("o maior numero é: ", anumero)
 
-npreco = preco - desconto
 
-print("novo valor: ", npreco)
+elif bnumero > anumero and bnumero > cnumero:
+        print("o maior numero é: ", bnumero)
+
+elif cnumero > anumero and cnumero > bnumero:
+        print("o maior numero é: ", cnumero)
+
+else :
+    print("não existe um maior entre eles")

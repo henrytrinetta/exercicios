@@ -1,12 +1,15 @@
-n1 = int(input("Digite o numero a ser dividido: "))
-n2 = int(input("Digite o numero divisor: "))
+nota1 = float(input("digite a primeira nota: "))
+nota2 = float(input("digite a segunda nota: "))
+media = (nota1 + nota2) / 2
 
-while n2 == 0:
-    if n2 == 0:
-        n2 = int(input("Digite o numero divisor: "))
-        print("o divisor não pode ser 0")
-        i = 0
+if media <= 4 and media >= 0:
+    print("Reprovado - media: ", media)
 
-res = n1 / n2
+elif media > 4 and media <= 7:
+    print("Exame - media: ", media)
 
-print(res)
+elif media > 7 and media <= 10:
+    print("Aprovado - media: ", media)
+
+else:
+    print("nota incorreta")

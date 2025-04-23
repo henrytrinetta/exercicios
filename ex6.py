@@ -1,11 +1,7 @@
-peso = float(input("Digite seu preso: ").replace(',', '.'))
+salario = float(input("Digite seu salario: "))
+if salario < 500:
+    salarior = salario + ((salario * 30) / 100)
+    print("salario rajustado: ", salarior)
 
-
-emagrecer = (peso*20) / 100
-engordar = (peso*15) / 100
-
-pesom = peso - emagrecer
-pesog = peso + engordar
-
-print('Valor caso emgareça 20%', pesom)
-print('Valor caso engorde 15%', pesog)
+else:
+    print("você não tem direito ao beneficio")
