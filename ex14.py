@@ -1,11 +1,13 @@
-nht = float(input("numero de horas trabalhadas: "))
-sm = float(input("valor do salario minimo: "))
-nhet = float(input("numero de horas extras trabalhadas: "))
+valor = int(input("digite 1 para poupança, 2 para fundos de renda fixa e 3 para fundo de renda variavel: "))
+inv = float(input("didgite o valor do investimento:"))
+if valor == 1:
+    ren = (valor * 3) / 100
 
-ht = sm / 8
-he = sm / 4
-sb = ht * nht
-qre = he * nhet
-sr = sb + qre
+if valor == 2:
+    ren = (valor * 4) / 100
 
-print("o salario a receber é: ", sr)
+if valor == 3:
+    ren = (valor * 5) / 100
+
+inv = inv + ren
+print("ajustado: ", inv)

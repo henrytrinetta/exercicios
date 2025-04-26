@@ -1,13 +1,11 @@
-import math
+media = float(input("digite sua media: "))
+renda = float(input("a renda da sua familia:"))
+horas = int(input("digite o numero de horas comunitarias "))
 
-numero = int(input("Digite um numero positivo maior que 0: "))
-
-quadrado = numero * numero
-cubo = numero ** numero
-raiz =  math.sqrt(numero)
-raizc = numero ** (1/3)
-
-print("ao quadrado: ", quadrado)
-print("ao cubo: ", cubo)
-print("raiz quadrada: ", raiz)
-print("raiz cubica: ", raizc)
+if media >= 8.5 and renda <= 2500:
+    print("elegivel")
+else:
+    if media > 8.0 and media < 8.5 and renda <= 2500 and horas >= 30:
+        print("elegivel")
+    else:
+        print("inelegivel")
